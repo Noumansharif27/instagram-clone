@@ -15,22 +15,20 @@ body {
 #main {
   height: 100%;
   width: 100%;
-  background-color: green;
+  background-color: #000;
   display: flex;
 }
 
 #left {
   height: 100%;
   width: 18%;
-  background-color: #000;
-  border-right: 1px solid rgba(225, 225, 225, 0.805);
+  border-right: 1px solid #262626;
   position: relative;
 }
 
 #center {
   height: 100%;
   width: 55%;
-  background-color: blue;
 }
 
 #right {
@@ -83,7 +81,7 @@ ul > li {
   /* padding-left: 25px; */
   height: 45px;
   width: 100%;
-  margin-left: 15px;
+  margin-left: 12px;
   padding: 15px;
 }
 
@@ -91,7 +89,7 @@ li > a {
   color: #fff;
   text-decoration: none;
   padding-left: 0.45rem;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 400;
   /* justify-content: center; */
 }
@@ -102,7 +100,7 @@ span {
 }
 
 i {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 600;
   opacity: 0.8;
   /* padding-right: 5px; */
@@ -120,7 +118,7 @@ ul > li:nth-child(1) a {
 
 .icon {
   color: #fff;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 400;
   opacity: 0.8;
 }
@@ -149,4 +147,82 @@ ul > li:hover {
   /* height: 35px; */
   border-radius: 7px;
   margin-right: 10px;
+}
+
+#status-bar {
+  height: 120px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  padding: 0 30px;
+}
+
+#status-bar img {
+  height: 75px;
+  width: 75px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid orange;
+}
+
+#arrow {
+  height: 30px;
+  width: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 38%;
+  right: 8%;
+  /* transform: translate(-50%, 0); */
+}
+
+.arrow {
+  color: #6d6e6e;
+}
+
+.dots {
+  color: #fff;
+}
+
+#main-content {
+  width: 100%;
+  height: 100%;
+  background-color: green;
+  padding-top: 20px;
+}
+
+#post-info {
+  height: 100px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  background-color: aqua;
+  padding: 20px 50px;
+  margin: auto;
+}
+
+#user-info {
+  width: 90%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+#user-info img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#post {
+  width: 80%;
+  height: 70%;
+  object-fit: cover;
+  margin: auto;
 }
