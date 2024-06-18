@@ -9,16 +9,130 @@ body {
   height: 100%;
   width: 100%;
   background-color: #dadada;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #main {
   height: 100%;
   width: 100%;
-  background-color: aquamarine;
+  background-color: green;
+  display: flex;
 }
 
 #left {
   height: 100%;
-  width: 20%;
+  width: 18%;
   background-color: #000;
+  border-right: 1px solid rgba(225, 225, 225, 0.805);
+}
+
+#center {
+  height: 100%;
+  width: 55%;
+  background-color: blue;
+}
+
+#right {
+  height: 100%;
+  flex: 1;
+  background-color: purple;
+}
+
+#side-bar {
+  height: 100%;
+  width: 100%;
+  color: #fff;
+}
+
+#brand-name {
+  height: 10%;
+  width: 100%;
+  /* background-color: yellow; */
+  padding: 30px 30px;
+  font-family: "Playwrite IN", cursive;
+  font-optical-sizing: 2px;
+  font-weight: 300;
+  font-style: normal;
+}
+
+#nav-options {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  position: relative;
+}
+
+#nav-options ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  /* justify-content: baseline; */
+  justify-content: space-around;
+  padding-top: 50px;
+  align-items: flex-start;
+}
+
+ul > li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+}
+
+li > a {
+  color: #fff;
+  text-decoration: none;
+  padding-left: 0.45rem;
+  font-size: 18px;
+  font-weight: 400;
+  /* justify-content: center; */
+}
+
+span {
+  font-size: 1px;
+  font-weight: 500;
+}
+
+i {
+  font-size: 20px;
+  font-weight: 600;
+  opacity: 0.8;
+  padding-right: 5px;
+}
+
+.home {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+ul > li:nth-child(1) a {
+  font-weight: 600;
+}
+
+.icon {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+#menu {
+  position: absolute;
+  bottom: 5%;
+  left: 5px;
+}
+
+#menu .icon {
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+li > img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
 }
