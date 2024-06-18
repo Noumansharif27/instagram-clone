@@ -24,6 +24,7 @@ body {
   width: 18%;
   background-color: #000;
   border-right: 1px solid rgba(225, 225, 225, 0.805);
+  position: relative;
 }
 
 #center {
@@ -49,10 +50,11 @@ body {
   width: 100%;
   /* background-color: yellow; */
   padding: 30px 30px;
-  font-family: "Playwrite IN", cursive;
-  font-optical-sizing: 2px;
-  font-weight: 300;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: 50px;
+  font-weight: 600;
   font-style: normal;
+  font-size: 25px;
 }
 
 #nav-options {
@@ -62,7 +64,6 @@ body {
   flex-direction: column;
   /* align-items: center; */
   justify-content: center;
-  position: relative;
 }
 
 #nav-options ul {
@@ -80,8 +81,8 @@ ul > li {
   display: flex;
   align-items: center;
   /* padding-left: 25px; */
-  height: 50px;
-  width: 90%;
+  height: 45px;
+  width: 100%;
   margin-left: 15px;
   padding: 15px;
 }
@@ -128,6 +129,7 @@ ul > li:nth-child(1) a {
   position: absolute;
   bottom: 3%;
   left: 5px;
+  width: 100%;
 }
 
 #menu .icon {
@@ -143,8 +145,8 @@ li > img {
 
 ul > li:hover {
   background-color: #1a1a1a;
-  width: 80%;
+  width: 90%;
   /* height: 35px; */
-  border-radius: 10px;
-  /* margin-left: 10px; */
+  border-radius: 7px;
+  margin-right: 10px;
 }
