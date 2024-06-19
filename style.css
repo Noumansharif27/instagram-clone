@@ -43,13 +43,6 @@ body {
 #right {
   height: 100%;
   flex: 1;
-  background-color: purple;
-}
-
-#side-bar {
-  height: 100%;
-  width: 100%;
-  color: #fff;
 }
 
 #brand-name {
@@ -62,6 +55,7 @@ body {
   font-weight: 600;
   font-style: normal;
   font-size: 25px;
+  color: #fff;
 }
 
 #nav-options {
@@ -79,7 +73,7 @@ body {
   gap: 10px;
   /* justify-content: baseline; */
   justify-content: space-around;
-  padding-top: 50px;
+  /* padding-top: 50px; */
   align-items: flex-start;
 }
 
@@ -113,6 +107,7 @@ i {
   font-weight: 600;
   opacity: 0.8;
   /* padding-right: 5px; */
+  color: #fff;
 }
 
 .home {
@@ -169,11 +164,12 @@ ul > li:hover {
 }
 
 #status-bar img {
-  height: 75px;
-  width: 75px;
+  height: 65px;
+  width: 65px;
   object-fit: cover;
   border-radius: 50%;
-  border: 2px solid orange;
+  border: 3px solid orange;
+  margin: 0 10px;
 }
 
 #arrow {
@@ -217,14 +213,14 @@ ul > li:hover {
   margin: auto;
 }
 
-#user-info {
+.user-info {
   width: 90%;
   color: #fff;
   display: flex;
   align-items: center;
 }
 
-#user-info img {
+.user-info img {
   height: 40px;
   width: 40px;
   border-radius: 50%;
@@ -249,4 +245,77 @@ ul > li:hover {
   height: 100%;
   width: 80%;
   object-fit: cover;
+}
+
+.details p {
+  font-size: 12px;
+  /* opacity: 0.6; */
+}
+
+.details .description {
+  opacity: 0.8;
+  font-size: medium;
+}
+
+.account-pic img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  object-position: center;
+  border: none;
+}
+
+#account-status {
+  height: 120px;
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#myAccount {
+  margin-top: 10px;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 35px 0 25px;
+}
+
+#myAccount a {
+  text-decoration: none;
+}
+
+#myAccount .description {
+  font-size: 14px;
+}
+
+#suggested-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 35px 0 25px;
+  /* background-color: #dadada; */
+  color: #fff;
+}
+
+#suggested-heading h4 {
+  opacity: 0.8;
+}
+
+#suggested-heading a {
+  color: #fff;
+}
+
+#suggested-heading a:hover {
+  opacity: 0.8;
+}
+
+/* a {
+  text-decoration: none;
+} */
+
+.details h4 {
+  font-size: 15px;
 }
