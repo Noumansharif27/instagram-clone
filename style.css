@@ -29,20 +29,22 @@ body {
   /* overflow: hidden; */
 }
 
-#center {
+#main-right {
   height: 100%;
-  width: 55%;
+  flex: 1;
+  background-color: #000;
+  display: flex;
   overflow: auto;
 }
 
-#center::-webkit-scrollbar {
-  /* Style the scrollbar (optional) */
-  width: 0px; /* Hide the scrollbar track */
+#center {
+  height: 100%;
+  flex: 1;
 }
 
 #right {
   height: 100%;
-  flex: 1;
+  width: 40%;
 }
 
 #brand-name {
@@ -312,9 +314,9 @@ ul > li:hover {
   opacity: 0.8;
 }
 
-/* a {
+a {
   text-decoration: none;
-} */
+}
 
 .details h4 {
   font-size: 15px;
