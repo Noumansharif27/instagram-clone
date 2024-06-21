@@ -321,3 +321,13 @@ a {
 .details h4 {
   font-size: 15px;
 }
+
+.users-story {
+  width: 20.85rem;
+  height: 90%;
+  background-color: #dadada;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
