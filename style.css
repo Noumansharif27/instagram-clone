@@ -205,7 +205,7 @@ ul > li:hover {
 }
 
 #post-info {
-  height: 100px;
+  height: 6.25rem;
   width: 60%;
   display: flex;
   justify-content: space-between;
@@ -216,19 +216,19 @@ ul > li:hover {
 }
 
 .user-info {
-  width: 90%;
+  width: 100%;
   color: #fff;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .user-info img {
-  height: 40px;
-  width: 40px;
+  height: 2.5rem;
+  width: 2.5rem;
   border-radius: 50%;
   object-fit: cover;
-  margin-right: 10px;
-  border: 2px solid orange;
+  margin-right: 0.625rem;
+  border: 0.125rem solid orange;
 }
 
 #post {
@@ -237,10 +237,10 @@ ul > li:hover {
   margin: auto;
   /* background-color: palevioletred; */
   /* padding: 0 50px; */
-  border: 1px solid #262626;
+  border: 0.0625rem solid #262626;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 #post img {
@@ -250,56 +250,67 @@ ul > li:hover {
 }
 
 .details p {
-  font-size: 12px;
+  font-size: 0.725rem;
   /* opacity: 0.6; */
 }
 
-.details .description {
+.description {
   opacity: 0.8;
-  font-size: medium;
+  font-size: 0rem;
 }
 
 .account-pic img {
-  height: 50px;
-  width: 50px;
+  height: 3.125rem;
+  width: 3.125rem;
   object-fit: cover;
   object-position: center;
   border: none;
 }
 
 #account-status {
-  height: 120px;
+  height: 7.25rem;
   width: 100%;
   background-color: #000;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0;
+}
+
+#account-status a {
+  margin-left: 5rem;
 }
 
 #myAccount {
-  margin-top: 10px;
+  margin-top: 0.625rem;
   display: flex;
   /* flex-direction: column; */
-  justify-content: space-around;
+  /* justify-content: space-around; */
   align-items: center;
-  padding: 0 35px 0 25px;
+  padding: 0 3.43rem 0 1.56rem;
 }
 
 #myAccount a {
   text-decoration: none;
+  font-size: 0.8rem;
 }
 
 #myAccount .description {
-  font-size: 14px;
+  font-size: 0.85rem;
+}
+
+#account-status p {
+  width: 80%;
 }
 
 #suggested-heading {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 35px 0 25px;
+  padding: 0 3.43rem 0.75rem 1.56rem;
   /* background-color: #dadada; */
   color: #fff;
+  /* margin-bottom: 0.5rem; */
 }
 
 #suggested-heading h4 {
@@ -318,9 +329,9 @@ a {
   text-decoration: none;
 }
 
-.details h4 {
-  font-size: 15px;
-}
+/* .details h4 {
+  font-size: 5rem;
+} */
 
 .users-story {
   width: 20.85rem;
@@ -330,4 +341,27 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+#text {
+  width: 100%;
+  /* background-color: blue; */
+  /* padding-top: 2rem; */
+  padding: 2rem 3.43rem 0 1.56rem;
+}
+
+#text a {
+  font-size: 0.812rem;
+  text-decoration: none;
+  color: #6c6c6c;
+}
+
+#text p {
+  padding-top: 0.8rem;
+  font-size: 0.75rem;
+  color: #6c6c6c;
+}
+
+#text .hover-deco:hover {
+  text-decoration: underline;
 }
