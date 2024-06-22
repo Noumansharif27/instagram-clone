@@ -200,8 +200,10 @@ ul > li:hover {
 #main-content {
   width: 100%;
   height: 100%;
+  margin-bottom: 2rem;
   /* background-color: green; */
   /* padding-top: px; */
+  margin-top: 0;
 }
 
 #post-info {
@@ -213,6 +215,7 @@ ul > li:hover {
   /* background-color: aqua; */
   /* padding: 20px 50px 0 50px; */
   margin: auto;
+  margin-top: 0;
 }
 
 .user-info {
@@ -241,11 +244,13 @@ ul > li:hover {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  border-radius: 0.35rem;
+  overflow: hidden;
 }
 
 #post img {
   height: 100%;
-  width: 80%;
+  width: 90%;
   object-fit: cover;
 }
 
@@ -377,13 +382,67 @@ a {
 .user-interactions {
   height: 7.25rem;
   width: 60%;
-  background-color: green;
+  /* background-color: green; */
   margin: auto;
   margin-top: 0.85rem;
+  color: #fff;
+  padding-bottom: 5rem;
+  border-bottom: 0.065rem solid #262626;
+  margin-bottom: 5rem;
 }
 
-.user-interactions #icon > span {
-  font-size: 1rem;
-
+#icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   color: #fff;
+}
+
+#icons span {
+  font-size: 2rem;
+  margin-right: 0.5rem;
+}
+/* 
+#icons .send-icon {
+  transform: rotate(-30deg);
+} */
+
+#likes {
+  margin-top: 0.5rem;
+}
+
+#icons #save-post-icon span {
+  margin-right: 0;
+}
+
+.user-interactions #description {
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+.user-interactions #description h3 {
+  font-size: 0.9rem;
+}
+
+.user-interactions #description p {
+  font-size: 0.9rem;
+}
+
+/* .user-interactions #description span {
+  font-size: 0.9rem;
+  opacity: 0.8;
+} */
+
+#comment {
+  font-size: 0.85rem;
+  opacity: 0.8;
+
+  margin-top: 0.3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+#smile {
+  width: 2rem;
+  height: 2rem;
 }
