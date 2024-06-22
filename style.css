@@ -208,7 +208,7 @@ ul > li:hover {
 
 #post-info {
   height: 6.25rem;
-  width: 60%;
+  width: 65%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -235,7 +235,7 @@ ul > li:hover {
 }
 
 #post {
-  width: 60%;
+  width: 65%;
   height: 70%;
   margin: auto;
   /* background-color: palevioletred; */
@@ -244,13 +244,13 @@ ul > li:hover {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  border-radius: 0.35rem;
+  border-radius: 0.18rem;
   overflow: hidden;
 }
 
 #post img {
   height: 100%;
-  width: 90%;
+  width: 80%;
   object-fit: cover;
 }
 
