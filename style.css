@@ -295,13 +295,21 @@ ul > li:hover {
   font-size: 0.8rem;
 }
 
+#myAccount h4 {
+  font-size: 0.85rem;
+}
+
+#myAccount p {
+  font-size: 0.65rem;
+}
+
 #myAccount .description {
   font-size: 0.85rem;
 }
 
-#account-status p {
+/* #account-status p {
   width: 80%;
-}
+} */
 
 #suggested-heading {
   display: flex;
@@ -364,4 +372,18 @@ a {
 
 #text .hover-deco:hover {
   text-decoration: underline;
+}
+
+.user-interactions {
+  height: 7.25rem;
+  width: 60%;
+  background-color: green;
+  margin: auto;
+  margin-top: 0.85rem;
+}
+
+.user-interactions #icon > span {
+  font-size: 1rem;
+
+  color: #fff;
 }
