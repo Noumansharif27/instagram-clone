@@ -31,20 +31,21 @@ body {
 
 #main-right {
   height: 100%;
-  flex: 1;
+  width: 82%;
   background-color: #000;
   display: flex;
-  overflow: auto;
+  overflow-y: auto;
+  /* overflow-x: hidden; */
 }
 
 #center {
   height: 100%;
-  flex: 1;
+  width: 65%;
 }
 
 #right {
   height: 100%;
-  width: 40%;
+  width: 35%;
 }
 
 #brand-name {
@@ -156,22 +157,27 @@ ul > li:hover {
 }
 
 #status-bar {
-  height: 120px;
+  height: 7.5rem;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
+  gap: 0.9rem;
   position: relative;
   padding: 0 30px;
+  overflow-x: auto;
+  max-width: 50rem;
+  white-space: nowrap;
 }
 
 #status-bar img {
-  height: 65px;
-  width: 65px;
+  max-height: 4.0625rem;
+  max-width: 4.0625rem;
   object-fit: cover;
   border-radius: 50%;
   border: 3px solid orange;
-  margin: 0 10px;
+  /* margin: 0 10px; */
+  white-space: nowrap;
 }
 
 #arrow {
