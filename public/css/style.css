@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --brand-gb-color: #000;
+  --primary-text-color: #fff;
+  --primary-border-color: #262626;
+  --right-nav-anchor-color: blue;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--primary-text-color);
+}
+
+#container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: relative;
+  background-color: var(--brand-gb-color);
+}
+
+img {
+  object-fit: cover;
+  object-position: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.opacity {
+  opacity: 0.7;
+}
+
+/* Sidebar */
+
+.sidebar {
+  height: 100%;
+  width: 18%;
+  border-right: 1px solid var(--primary-border-color);
+  padding: 2.5rem 1.5rem 2.5rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: fixed;
+  top: 0;
+}
+
+.logo svg,
+.logo path {
+  fill: var(--primary-text-color);
+}
+
+.logo {
+  padding-left: 1rem;
+}
+
+.sidebar .navbar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.navbar a {
+  color: var(--primary-text-color);
+  opacity: 0.88;
+}
+
+.navbar a:nth-child(1) {
+  font-weight: 550;
+  opacity: 1;
+}
+
+.navbar .nav-element {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 2rem 0.5rem 1rem;
+  height: 2.9rem;
+  width: 100%;
+}
+
+.nav-element:hover {
+  background-color: var(--primary-border-color);
+  opacity: 1;
+}
+
+.nav-element:hover svg {
+  scale: 1.1;
+  transition: scale 0.1s ease-out;
+}
+
+.nav-element .user-profile-image {
+  width: 13%;
+  border-radius: 50%;
+}
+
+.nav-element span,
+.nav-element strong {
+  margin-top: 0.09rem;
+}
+
+/* Main-Pg */
+
+.main {
+  width: 55%;
+  height: 100%;
+  margin-left: 18%;
+  background-color: #0f2;
+}
+
+.status-bar {
+  width: 100%;
+  height: 6.5rem;
+  background-color: gray;
+  position: relative;
+}
+
+.status-bar .accounts {
+  width: 95%;
+  height: 100%;
+  display: flex;
+  /* justify-content: space-between; */
+  padding: 1rem 0 0 1rem;
+  gap: 1rem;
+  background-color: rebeccapurple;
+  margin: auto;
+  overflow: hidden;
+}
+
+.status-bar .accounts span {
+  position: relative;
+  z-index: 22;
+}
+
+.status-bar .accounts span img {
+  height: 80%;
+  background-color: #262626;
+  border-radius: 50%;
+}
+
+.status-bar .accounts span::before {
+  content: "";
+  height: 88%;
+  width: 108%;
+  background-image: -webkit-linear-gradient(
+    red 5%,
+    rgb(245, 30, 245) 50%,
+    red,
+    yellow
+  );
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.status-bar .accounts span p {
+  font-size: 0.8rem;
+}
+
+.status-bar button {
+  position: absolute;
+  top: 35%;
+  right: 9%;
+  z-index: 333;
+  height: 2rem;
+  width: 2rem;
+  border: none;
+  border-radius: 50%;
+  /* background-color: var(--primary-text-color); */
+}
+
+.status-bar button img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+/* Right-Sidbar */
+
+.right-sidebar {
+  flex: 1;
+  background-color: rgb(119, 219, 20);
+  margin: 2rem 4rem 2rem 0.5rem;
+}
+
+.user-profile-details {
+  width: 100%;
+  height: 4rem;
+  background-color: #0f2;
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-profile-details .left-side-profile {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.user-profile-details .details {
+  height: 80%;
+  /* background-color: purple; */
+  align-self: center;
+}
+
+.user-profile-details img {
+  height: 100%;
+  border-radius: 50%;
+}
+
+.user-profile-details a {
+  align-self: center;
+  font-size: 0.8rem;
+  color: var(--right-nav-anchor-color);
+}
+
+.right-sidebar .suggested-heading {
+  height: 3rem;
+  width: 100%;
+  margin-top: 0.7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.suggested-heading h3 {
+  opacity: 0.7;
+}
+
+.suggested-heading a {
+  font-size: 0.9rem;
+  color: var(--primary-text-color);
+}
+
+.suggested-heading a:hover {
+  opacity: 0.7;
+}
+
+.suggested-accounts {
+  min-height: 50%;
+  width: 100%;
+  background-color: #19a24e;
+  display: flex;
+  flex-direction: column;
+}
+
+.suggested-accounts .account {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #262626;
+}
+
+.suggested-accounts .account .account-left {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.suggested-accounts .account img {
+  width: 25%;
+  background-color: #262626;
+  border-radius: 50%;
+}
+
+.suggested-accounts .details {
+  align-self: center;
+}
+
+.suggested-accounts .account a {
+  font-size: 0.8rem;
+}
