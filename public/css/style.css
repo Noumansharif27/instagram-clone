@@ -9,6 +9,7 @@
   --primary-text-color: #fff;
   --primary-border-color: #262626;
   --right-nav-anchor-color: blue;
+  --right-sidebar-links-color: #6c6c6c;
 }
 
 html,
@@ -16,15 +17,15 @@ body {
   height: 100%;
   width: 100%;
   font-family: Arial, Helvetica, sans-serif;
-  color: var(--primary-text-color);
 }
 
 #container {
-  height: 100%;
+  min-height: 100%;
   width: 100%;
   display: flex;
   position: relative;
   background-color: var(--brand-gb-color);
+  color: var(--primary-text-color);
 }
 
 img {
@@ -37,7 +38,8 @@ a {
 }
 
 .opacity {
-  opacity: 0.7;
+  opacity: 0.6;
+  font-size: 0.8rem;
 }
 
 /* Sidebar */
@@ -116,13 +118,11 @@ a {
   width: 55%;
   height: 100%;
   margin-left: 18%;
-  background-color: #0f2;
 }
 
 .status-bar {
   width: 100%;
   height: 6.5rem;
-  background-color: gray;
   position: relative;
 }
 
@@ -133,7 +133,6 @@ a {
   /* justify-content: space-between; */
   padding: 1rem 0 0 1rem;
   gap: 1rem;
-  background-color: rebeccapurple;
   margin: auto;
   overflow: hidden;
 }
@@ -180,6 +179,8 @@ a {
   width: 2rem;
   border: none;
   border-radius: 50%;
+  color: #000;
+
   /* background-color: var(--primary-text-color); */
 }
 
@@ -187,20 +188,164 @@ a {
   height: 100%;
   width: 100%;
   border-radius: 50%;
+  color: #000;
 }
+
+.status-bar button svg {
+  fill: #000;
+}
+
+/* Posts */
+
+.posts {
+  height: 100%;
+  width: 70%;
+  margin: auto;
+}
+
+.posts .post {
+  width: 100%;
+  min-height: 90dvh;
+  margin: 1rem 0;
+}
+
+.post .post-header {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.post .post-header img {
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.post .post-header .post-header-left {
+  display: flex;
+}
+
+.post-header .post-header-left .post-user-details svg {
+  align-self: center;
+  color: var(--primary-text-color);
+  fill: var(--primary-text-color);
+}
+
+.post-header svg {
+  scale: 1.5;
+  margin-right: 0.5rem;
+}
+
+.posts .post-body {
+  height: 90dvh;
+  width: 100%;
+  border: 1px solid var(--primary-border-color);
+  margin: 0.5rem 0;
+  padding: 0 5rem;
+  border-radius: 0.3rem;
+  overflow: hidden;
+}
+
+.post-body img {
+  height: 100%;
+  width: 100%;
+  border-left: 1px solid var(--primary-border-color);
+  border-right: 1px solid var(--primary-border-color);
+}
+
+.posts .post-footer-top {
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.posts .post-footer-top .post-footer-left {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.posts .post-footer-top .post-footer-left svg {
+  scale: 1.1;
+}
+
+.posts .post-footer-top .post-footer-left + svg {
+  scale: 2.1;
+  margin-right: 0.5rem;
+}
+
+.post-footer-bottom .likes-count {
+  margin-bottom: 1rem;
+  font-size: 0.89rem;
+}
+
+.post-footer-bottom .comment {
+  font-size: 0.89rem;
+  margin-bottom: 0.2rem;
+  margin-top: 0.5rem;
+}
+
+.post-footer-bottom strong:nth-child(3) {
+  font-size: 0.9rem;
+}
+
+.post-footer-bottom p:nth-child(4) {
+  font-size: 0.89rem;
+  opacity: 0.7;
+  margin: 0.5rem 0;
+}
+
+.post-footer-bottom form {
+  width: 100%;
+  height: 2.5rem;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  border-bottom: 1px solid var(--primary-border-color);
+}
+
+.post-footer-bottom form input[type="text"] {
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  padding: 0.5rem;
+  width: 100%;
+  outline: none;
+  color: var(--primary-text-color);
+}
+
+.post-footer-bottom form input::placeholder {
+  font-style: italic;
+}
+
+.post-footer-bottom form button {
+  position: absolute;
+  left: 80%;
+  top: 30%;
+  background-color: transparent;
+  border: none;
+  color: var(--right-nav-anchor-color);
+  font-weight: 800;
+  font-size: 1rem;
+  /* opacity: 0; */
+}
+
+/* .post-footer-bottom input:hover button {
+  opacity: 1;
+} */
 
 /* Right-Sidbar */
 
 .right-sidebar {
   flex: 1;
-  background-color: rgb(119, 219, 20);
   margin: 2rem 4rem 2rem 0.5rem;
 }
 
 .user-profile-details {
   width: 100%;
   height: 4rem;
-  background-color: #0f2;
   display: flex;
   justify-content: space-between;
 }
@@ -212,7 +357,6 @@ a {
 
 .user-profile-details .details {
   height: 80%;
-  /* background-color: purple; */
   align-self: center;
 }
 
@@ -238,6 +382,7 @@ a {
 
 .suggested-heading h3 {
   opacity: 0.7;
+  font-size: 1rem;
 }
 
 .suggested-heading a {
@@ -250,9 +395,8 @@ a {
 }
 
 .suggested-accounts {
-  min-height: 50%;
+  /* min-height: 50%; */
   width: 100%;
-  background-color: #19a24e;
   display: flex;
   flex-direction: column;
 }
@@ -261,7 +405,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #262626;
+  margin-bottom: 0.3rem;
 }
 
 .suggested-accounts .account .account-left {
@@ -271,8 +415,8 @@ a {
 
 .suggested-accounts .account img {
   width: 25%;
-  background-color: #262626;
   border-radius: 50%;
+  background-color: var(--primary-border-color);
 }
 
 .suggested-accounts .details {
@@ -281,4 +425,83 @@ a {
 
 .suggested-accounts .account a {
   font-size: 0.8rem;
+  color: var(--right-nav-anchor-color);
 }
+
+.right-sidebar a :hover {
+  opacity: 0.7;
+}
+
+.links {
+  width: 100%;
+  margin-top: 1rem;
+  color: var(--primary-border-color);
+  opacity: 0.7;
+}
+
+.links a {
+  color: var(--right-sidebar-links-color);
+  font-size: 0.8rem;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.links p {
+  margin-top: 3rem;
+  white-space: nowrap;
+  font-size: 1rem;
+  color: var(--right-sidebar-links-color);
+}
+
+/* Signup-form */
+
+.signup-form {
+  min-height: 75dvh;
+  width: 25dvw;
+  border: 1px solid var(--primary-border-color);
+  padding: 1rem;
+  text-align: center;
+  margin: 5rem auto;
+}
+
+.signup-form .brand-name svg {
+  scale: 2;
+  margin: 2rem 6rem 0;
+}
+
+.signup-form .brand-name h3 {
+  font-size: 1rem;
+  margin: 1rem 0 1.5rem;
+  opacity: 0.5;
+}
+
+.signup-form input {
+  width: 80%;
+  height: 2rem;
+  border: none;
+  border-bottom: 1px solid var(--right-sidebar-links-color);
+  outline: none;
+  font-size: 1rem;
+  margin: 0 2rem 0.5rem;
+}
+
+.signup-form form p {
+  font-size: 0.8rem;
+  width: 80%;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.signup-form form .signup-btn {
+  width: 90%;
+  height: 2rem;
+  border: none;
+  background-color: rgba(0, 0, 255, 0.724);
+  border-radius: 0.5rem;
+  color: var(--primary-text-color);
+  margin-top: 1rem;
+}
+
+/* Form-footer */

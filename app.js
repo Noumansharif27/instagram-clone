@@ -2,6 +2,8 @@ const express = require("express");
 const mongoose = require("mongoose");
 const path = require("path");
 
+const userRoute = require("./routes/user.js");
+
 const app = express();
 const PORT = 3000;
 
@@ -24,8 +26,10 @@ async function main() {
 }
 
 app.get("/", (req, res) => {
-  res.send("welcome to root route");
+  res.render("user/signin.ejs");
 });
+
+// app.use("/", userRoute);
 
 app.get("/home", (req, res) => {
   res.render("index.ejs");
