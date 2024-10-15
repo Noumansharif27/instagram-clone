@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign up . Instagram</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <title>New post</title>
+    <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
     <main>
@@ -28,27 +28,13 @@
           <h3>Signup to see photos and videos from your friends</h3>
         </div>
 
-        <form action="/signup" method="post">
+        <form action="/home/new" method="post">
+          <input type="text" name="image" placeholder="image link" />
           <input
-            type="text"
-            name="user[username]"
-            class="username"
-            placeholder="username"
-            required
-          />
-          <input
-            type="password"
-            name="user[password]"
+            type="te"
+            name="comment"
             class="password"
-            placeholder="password"
-            required
-          />
-          <input
-            type="text"
-            name="user[email]"
-            class="email"
-            placeholder="email"
-            required
+            placeholder="image"
           />
 
           <p>
@@ -59,16 +45,12 @@
 
           <p>
             By signing up you agree to our <a href="#">Terms.</a>
-            <a href="#">Privacy Policy</a> and <a href="#">Cookie Policy .</a>
+            <a href="#">Privacy Policy</a> and
+            <a href="#">Cookie Policy .</a>
           </p>
 
           <button class="signup-btn"><strong>Sign up</strong></button>
         </form>
-      </div>
-      <div class="redirecting-login-form">
-        <p>
-          Have an account ?<a href="/login"><strong>Log in</strong></a>
-        </p>
       </div>
     </main>
     <%- include('../includes/footer.ejs') %>

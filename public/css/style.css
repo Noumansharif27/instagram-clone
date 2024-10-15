@@ -42,6 +42,10 @@ a {
   font-size: 0.8rem;
 }
 
+svg {
+  fill: var(--primary-text-color);
+}
+
 /* Sidebar */
 
 .sidebar {
@@ -96,6 +100,10 @@ a {
   background-color: var(--primary-border-color);
   opacity: 1;
 }
+
+/* .nav-element:nth-last-child(2):hover {
+  opacity: 0;
+} */
 
 .nav-element:hover svg {
   scale: 1.1;
@@ -234,6 +242,7 @@ a {
 .post-header svg {
   scale: 1.5;
   margin-right: 0.5rem;
+  align-self: center;
 }
 
 .posts .post-body {
@@ -451,7 +460,7 @@ a {
 .links p {
   margin-top: 3rem;
   white-space: nowrap;
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: var(--right-sidebar-links-color);
 }
 
@@ -463,12 +472,13 @@ a {
   border: 1px solid var(--primary-border-color);
   padding: 1rem;
   text-align: center;
-  margin: 5rem auto;
+  margin: 3rem auto 0.8rem;
 }
 
 .signup-form .brand-name svg {
   scale: 2;
   margin: 2rem 6rem 0;
+  fill: var(--brand-gb-color);
 }
 
 .signup-form .brand-name h3 {
@@ -483,7 +493,7 @@ a {
   border: none;
   border-bottom: 1px solid var(--right-sidebar-links-color);
   outline: none;
-  font-size: 1rem;
+  font-size: 0.85rem;
   margin: 0 2rem 0.5rem;
 }
 
@@ -504,4 +514,193 @@ a {
   margin-top: 1rem;
 }
 
+.redirecting-login-form {
+  height: 4rem;
+  width: 25dvw;
+  margin-inline: auto;
+  text-align: center;
+  border: 1px solid var(--primary-border-color);
+  padding: 1.5rem 0;
+  margin-bottom: 3rem;
+}
+
+.redirecting-login-form p {
+  font-size: 0.89rem;
+}
+
+.redirecting-login-form a {
+  color: var(--right-nav-anchor-color);
+}
+
+/* Login-form */
+
+.login-pg {
+  display: flex;
+  padding: 0 3rem;
+}
+
+.login-pg .mockups {
+  margin-left: 3rem;
+  position: relative;
+}
+
+.login-pg .mockups .screenshots img {
+  position: absolute;
+  top: 47%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.02s linear;
+  animation: mockupsImagesAnimation 6s linear infinite;
+}
+
+.login-pg .mockups .screenshots img:nth-child(1) {
+  animation-delay: 1.5s;
+}
+
+.login-pg .mockups .screenshots img:nth-child(2) {
+  animation-delay: 2.5s;
+}
+
+.login-pg .mockups .screenshots img:nth-child(3) {
+  animation-delay: 3.5s;
+}
+
+@keyframes mockupsImagesAnimation {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+
+  21% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.login-pg .signup-form {
+  min-height: 80dvh;
+  width: 25dvw;
+  border: 1px solid var(--primary-border-color);
+  padding: 1rem;
+  text-align: center;
+  margin: 1rem;
+}
+
+.login-pg .brand-name {
+  margin-bottom: 3rem;
+}
+
+.login-pg form .signup-btn {
+  width: 85%;
+}
+
+.login-pg .or {
+  display: flex;
+  gap: 0.2rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.login-pg .line {
+  height: 1px;
+  background-color: var(--primary-border-color);
+  width: 35%;
+}
+
+.login-pg .login-options {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+.login-pg .login-options img {
+  width: 1rem;
+}
+
+.login-pg a.forget-password {
+  color: var(--right-nav-anchor-color);
+  padding-top: 3rem;
+}
+
 /* Form-footer */
+
+.form-footer {
+  margin: auto;
+  text-align: center;
+}
+
+.form-footer a {
+  color: var(--right-sidebar-links-color);
+  font-size: 0.8rem;
+}
+
+.form-footer a:hover {
+  text-decoration: underline;
+}
+
+.form-footer .language-prefrence {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.8rem;
+  color: var(--right-sidebar-links-color);
+}
+
+.form-footer .language-prefrence .language-dropdown {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  color: var(--right-sidebar-links-color);
+}
+
+.form-footer .language-prefrence a {
+  font-size: 1rem;
+}
+
+/* Flash */
+
+/* .flash-message {
+  height: 3rem;
+  width: 100%;
+  position: absolute;
+  top: 80%;
+  z-index: 9999;
+}
+
+.flash-message .success-flash {
+  padding: 1rem 2rem;
+  min-height: 3rem;
+  position: absolute;
+  top: 50%;
+  margin-inline: auto;
+  background-color: green;
+  border: 1px soid white;
+  z-index: 8888;
+}
+
+.flash-message .error-flash {
+  padding: 1rem 2rem;
+  position: absolute;
+  top: 50%;
+  margin-inline: auto;
+  background-color: red;
+  border: 1px soid white;
+  z-index: 8888;
+} */
