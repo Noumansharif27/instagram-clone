@@ -1,16 +1,18 @@
 {
-  "name": "instagram-clone",
+  "name": "instagramClone",
   "version": "1.0.0",
-  "description": "a practical UI replica of instagram.",
+  "description": "A visual instagram clone.",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Nouman Sharif",
   "license": "ISC",
   "dependencies": {
-    "cloudinary": "^2.5.0",
+    "cloudinary": "^1.41.3",
     "connect-flash": "^0.1.1",
     "cookie-parser": "^1.4.6",
     "dotenv": "^16.4.5",
@@ -28,3 +30,4 @@
     "passport-local-mongoose": "^8.0.0"
   }
 }
+
